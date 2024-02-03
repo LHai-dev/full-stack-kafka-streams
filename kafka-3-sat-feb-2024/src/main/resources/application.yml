@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    producer:
+      client-id: rest-producer
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+server:
+  port: 9081
+
+application:
+  configs:
+    invoice.count: 60
+    topic.name: pos-topic
